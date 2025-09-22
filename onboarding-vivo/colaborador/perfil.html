@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script async src="../javascript/foto-perfil.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="vivo-logo">
+        <a href="../index.html"
+          ><img src="../images/logo-vivo.png" alt="Logo da vivo"
+        /></a>
+        <h1 class="h1-titulo">Onboarding Vivo</h1>
+      </div>
+      <nav>
+        <a href="./inicio.html">Início</a>
+        <a href="./minhas-tarefas.html">Minhas Tarefas</a>
+        <a href="./minha-rede.html">Minha Rede</a>
+        <a href="./central-duvidas.html">Central de Dúvidas</a>
+        <a href="./central-documentos.html">Central de Documentos</a>
+      </nav>
+      <img
+        class="foto-perfil"
+        src="../images/caique.png"
+        alt="Foto do usuário atual"
+      />
+    </header>
+    <main>
+      <section id="edicao-perfil" class="full">
+        <div class="rede-img">
+          <label class="picture" for="picture__input" tabindex="0">
+            <span class="picture__image"> </span>
+          </label>
+          <input type="file" accept="image/*" id="picture__input" />
+
+          <!-- <img src="../images/caique.png" alt="role buddy" /> -->
+          <p>Caique Lacerda</p>
+          <p>Culture Buddy</p>
+        </div>
+        <form action="" method="post" id="form-buddy">
+          <div class="form-row">
+            <label for="nome-perfil">Nome Completo</label>
+            <input
+              id="nome-perfil"
+              name="nome-perfil"
+              type="text"
+              placeholder="Nome do usuário"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="email-perfil">Email</label>
+            <input
+              id="email-perfil"
+              name="email-perfil"
+              type="email"
+              placeholder="caiquelacerda@vivo.com.br"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="apelido-perfil">Apelido</label>
+            <input
+              id="apelido-perfil"
+              name="apelido-perfil"
+              type="text"
+              placeholder="Apelido do usuário"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="cargo-perfil">Cargo</label>
+            <input
+              id="cargo-perfil"
+              name="cargo-perfil"
+              type="text"
+              placeholder="Cargo do usuário"
+              required
+            />
+          </div>
+          <button class="btn btn-primary-main" id="submit-buddy" type="submit">
+            Atualizar perfil
+          </button>
+        </form>
+      </section>
+    </main>
+    
+  </body>
+</html>

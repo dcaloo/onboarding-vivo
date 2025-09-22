@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Tarefas</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="vivo-logo">
+        <a href="../index.html"
+          ><img src="../images/logo-vivo.png" alt="Logo da vivo"
+        /></a>
+        <h1 class="h1-titulo">Onboarding Vivo</h1>
+      </div>
+      <nav>
+        <a href="./inicio.html">Início</a>
+        <a href="./cadastro-buddy.html">Cadastrar Buddy</a>
+        <a href="./cadastro-colaborador.html">Cadastrar Colaborador</a>
+        <p class="current-page">Gestão de Tarefas</p>
+      </nav>
+    </header>
+
+    <main class="gestao-tarefas">
+      <section id="gestao-tarefas" class="full">
+        <div class="section-title">
+          <h1>Gestão de Tarefas</h1>
+          <btn class="border-btn" id="openDialog">Criar nova tarefa</btn>
+        </div>
+        <div id="gestao-tarefas-grid">
+          <p class="grid-title">Descrição</p>
+          <p class="grid-title">Colaborador Responsável</p>
+          <p class="grid-title">Prazo</p>
+          <p class="grid-title">Status</p>
+          <p class="grid-title">Ações</p>
+          <p>Traga os seus documentos para completar a papelada de admissão!</p>
+          <p>Eduarda Ferreira</p>
+          <p>25 de maio, 2025</p>
+          <p>Em andamento</p>
+          <div class="icon-container">
+            <a href=""
+              ><img
+                src="../images/lixeira.png"
+                alt="lixeira"
+                class="icon-container"
+            /></a>
+          </div>
+          <p>Participe da reunião de boas-vindas com o RH.</p>
+          <p>Gabriel Almeida</p>
+          <p>4 de junho, 2025</p>
+          <p>Em andamento</p>
+          <div class="icon-container">
+            <a href=""
+              ><img
+                src="../images/lixeira.png"
+                alt="lixeira"
+                class="icon-container"
+            /></a>
+          </div>
+          <p>
+            Participe da apresentação institucional sobre a cultura da Vivo.
+          </p>
+          <p>Vinícius Rocha</p>
+          <p>28 de maio, 2025</p>
+          <p>Concluído</p>
+          <div class="icon-container">
+            <a href=""
+              ><img
+                src="../images/lixeira.png"
+                alt="lixeira"
+                class="icon-container"
+            /></a>
+          </div>
+          <p>Conclua o treinamento sobre diversidade e inclusão.</p>
+          <p>Juliana Martins</p>
+          <p>1 de julho, 2025</p>
+          <p>Em andamento</p>
+          <div class="icon-container">
+            <a href=""
+              ><img
+                src="../images/lixeira.png"
+                alt="lixeira"
+                class="icon-container"
+            /></a>
+          </div>
+          <p>Revise e aceite as políticas internas da Vivo.</p>
+          <p>Vinícius Rocha</p>
+          <p>22 de maio, 2025</p>
+          <p>Em atraso</p>
+          <div class="icon-container">
+            <a href=""
+              ><img
+                src="../images/lixeira.png"
+                alt="lixeira"
+                class="icon-container"
+            /></a>
+          </div>
+          <p>Participe do workshop de metodologias ágeis.</p>
+          <p>Gabriel Almeida</p>
+          <p>1 de julho, 2025</p>
+          <p>Em andamento</p>
+          <div class="icon-container">
+            <a href=""
+              ><img
+                src="../images/lixeira.png"
+                alt="lixeira"
+                class="icon-container"
+            /></a>
+          </div>
+        </div>
+
+        <div class="paginacao">
+          <span id="contadorPagina">Página 1 de 5</span>
+          <div>
+            <a href="#" id="setaEsquerda" class="seta-esquerda"
+              ><img src="../images/flecha.png" class="seta-esquerda"
+            /></a>
+            <a href="#" id="setaDireita" class="seta-direita"
+              ><img src="../images/flecha.png" class="seta-direita"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <dialog>
+        <h2>Nova tarefa</h2>
+        <button id="closeDialog" type="button">X</button>
+        <form action="" method="post">
+          <div class="form-row">
+            <label for="descricao-tarefa">Descrição da tarefa</label>
+            <input
+              id="descricao-tarefa"
+              name="descricao-tarefa"
+              type="text"
+              placeholder="Comece o seu Onboarding!"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="colaborador-resp">Colaborador responsável</label>
+            <select id="colaborador-resp" name="colaborador-resp">
+              <option value="">Selecione uma opção</option>
+              <option value="caique">Caíque de Lacerda</option>
+              <option value="gilmar">Gilmar Moura</option>
+              <option value="fernando">Fernando Nakasone</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="contato-sup">Contato de Suporte</label>
+            <select id="contato-sup" name="contato-sup">
+              <option value="">Selecione uma opção</option>
+              <option value="caique">Caíque de Lacerda</option>
+              <option value="gilmar">Gilmar Moura</option>
+              <option value="fernando">Fernando Nakasone</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="prazo">Prazo estimado</label>
+            <input id="prazo" name="prazo" type="date" required />
+          </div>
+          <button class="btn border-btn" id="submitTarefa" type="submit">
+            Adicionar nova tarefa
+          </button>
+        </form>
+      </dialog>
+    </main>
+    <script src="../javascript/dialog.js"></script>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

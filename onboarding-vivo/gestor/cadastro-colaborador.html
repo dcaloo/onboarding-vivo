@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Colaborador</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="vivo-logo">
+        <a href="../index.html"
+          ><img src="../images/logo-vivo.png" alt="Logo da vivo"
+        /></a>
+        <h1 class="h1-titulo">Onboarding Vivo</h1>
+      </div>
+      <nav>
+        <a href="./inicio.html">Início</a>
+        <a href="./cadastro-buddy.html">Cadastrar Buddy</a>
+        <p class="current-page">Cadastrar Colaborador</p>
+        <a href="./gestao-tarefas.html">Gestão de Tarefas</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="cadastro-colaborador">
+        <div class="section-title">
+          <h1>Cadastrar Colaborador</h1>
+        </div>
+        <form action="" method="post" id="form-colaborador">
+          <div class="form-row">
+            <label for="nome">Nome Completo</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="Nome do empregado"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="inicio">Data de inicio</label>
+            <input
+              id="inicio"
+              name="inicio"
+              type="date"
+              placeholder="dd/mm/aaaa"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="colaborador@vivo.com.br"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="cargo">Cargo</label>
+            <input
+              id="cargo"
+              name="cargo"
+              type="text"
+              placeholder="Desenvolvedor"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="role-buddy">Role Buddy</label>
+            <select id="role-buddy" name="role-buddy">
+              <option value="">Selecione uma opção</option>
+              <option value="fernando">Fernando Nakasone</option>
+              <option value="gilmar">Gilmar Moura</option>
+              <option value="eduardo">Eduardo Caló</option>
+              <option value="vitor">Vitor Garcia</option>
+              <option value="caique">Caique Lacerda</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="culture-buddy">Culture Buddy</label>
+            <select id="culture-buddy" name="culture-buddy">
+              <option value="">Selecione uma opção</option>
+              <option value="fernando">Fernando Nakasone</option>
+              <option value="gilmar">Gilmar Moura</option>
+              <option value="eduardo">Eduardo Caló</option>
+              <option value="vitor">Vitor Garcia</option>
+              <option value="caique">Caique Lacerda</option>
+            </select>
+          </div>
+          <button
+            class="btn btn-primary-main"
+            id="submit-colaborador"
+            type="submit"
+          >
+            Cadastrar colaborador
+          </button>
+        </form>
+      </section>
+
+      <section id="cadastro-metas">
+        <div class="section-title">
+          <h1>Cadastrar metas de 30 dias</h1>
+        </div>
+
+        <form action="" method="post" id="form-metas">
+          <div class="form-row">
+            <label for="conjunto-metas">Conjunto de metas</label>
+            <select id="conjunto-metas" name="conjunto-metas">
+              <option value="">Selecione uma opção</option>
+              <option value="front-end">Desenvolvedor Front-end</option>
+              <option value="back-end">Desenvolvedor back-end</option>
+              <option value="designer">Designer Grafico</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="nova-meta">Criar nova meta</label>
+            <input
+              id="cadastrar-meta"
+              name="cadastrar-meta"
+              type="text"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="">Metas atuais</label>
+            <div id="metas-atuais">
+              <p>
+                Aplicar boas práticas de segurança no front-end em todas as
+                novas implementações.
+              </p>
+              <p>
+                Entregar as demandas com índice de cumprimento de sprint acima
+                de 95% por trimestre.
+              </p>
+              <p>
+                Reduzir em 30% o número de chamados relacionados a falhas de
+                interface nos canais digitais.
+              </p>
+            </div>
+          </div>
+          <button
+            class="btn btn-primary-main"
+            id="submit-colaborador"
+            type="submit"
+          >
+            Cadastrar nova meta
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="../javascript/formColaborador.js"></script>
+  </body>
+</html>

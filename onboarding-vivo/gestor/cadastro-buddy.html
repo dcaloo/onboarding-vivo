@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Buddy</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="vivo-logo">
+        <a href="../index.html"
+          ><img src="../images/logo-vivo.png" alt="Logo da vivo"
+        /></a>
+        <h1 class="h1-titulo">Onboarding Vivo</h1>
+      </div>
+      <nav>
+        <a href="./inicio.html">Início</a>
+        <p class="current-page">Cadastrar Buddy</p>
+        <a href="./cadastro-colaborador.html">Cadastrar Colaborador</a>
+        <a href="./gestao-tarefas.html">Gestão de Tarefas</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="cadastro-buddy">
+        <div class="section-title">
+          <h1>Cadastrar buddy</h1>
+        </div>
+        <form action="" method="post" id="form-buddy">
+          <div class="form-row">
+            <label for="nome-buddy">Nome Completo</label>
+            <input
+              id="nome-buddy"
+              name="nome-buddy"
+              type="text"
+              placeholder="Nome do empregado"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="cargo-buddy">Cargo</label>
+            <input
+              id="cargo-buddy"
+              name="cargo-buddy"
+              type="text"
+              placeholder="Desenvolvedor"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="tipo-buddy">Tipo de buddy</label>
+            <select id="tipo-buddy" name="tipo-buddy">
+              <option value="">--Selecione o tipo de buddy--</option>
+              <option value="role-buddy">Role buddy</option>
+              <option value="culture-buddy">Culture buddy</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="linkedin-buddy">Linkedin</label>
+            <input
+              id="linkedin-buddy"
+              name="linkedin-buddy"
+              type="url"
+              placeholder="www.linkedin.com/in/colaborador-vivo"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="email-buddy">Email</label>
+            <input
+              id="email-buddy"
+              name="email-buddy"
+              type="email"
+              placeholder="colaborador@vivo.com.br"
+              required
+            />
+          </div>
+          <button class="btn btn-primary-main" id="submit-buddy" type="submit">
+            Cadastrar novo buddy
+          </button>
+        </form>
+      </section>
+      <section id="exclusao-buddy">
+        <div class="section-title">
+          <h1>Excluir buddy</h1>
+        </div>
+        <div id="exclusao-buddy-grid">
+          <p class="grid-title">Nome</p>
+          <p class="grid-title">Cargo</p>
+          <p class="grid-title">Tipo</p>
+          <p class="grid-title">Email</p>
+          <div></div>
+          <p>Fernando Nakasone</p>
+          <p>Desenvolvedor</p>
+          <p>Role Buddy</p>
+          <p>fernandonksn@vivo.com</p>
+          <div class="icon-container">
+            <img src="../images/lixeira.png" alt="" />
+          </div>
+          <p>Caíque de Lacerda</p>
+          <p>Consultor de Vendas</p>
+          <p>Culture Buddy</p>
+          <p>caiquelacerda@vivo.com</p>
+          <div class="icon-container">
+            <img src="../images/lixeira.png" alt="" />
+          </div>
+          <p>Amanda Ribeiro</p>
+          <p>Analista de Dados</p>
+          <p>Role Buddy</p>
+          <p>amandaribeiro@vivo.com</p>
+          <div class="icon-container">
+            <img src="../images/lixeira.png" alt="" />
+          </div>
+          <p>Beatriz Lima</p>
+          <p>UX Designer</p>
+          <p>Role Buddy</p>
+          <p>beatrizlima@vivo.com</p>
+          <div class="icon-container">
+            <img src="../images/lixeira.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../javascript/formBuddy.js"></script>
+  </body>
+</html>

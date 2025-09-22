@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão Onboarding</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="vivo-logo">
+        <a href="../index.html"
+          ><img src="../images/logo-vivo.png" alt="Logo da vivo"
+        /></a>
+        <h1 class="h1-titulo">Onboarding Vivo</h1>
+      </div>
+      <nav>
+        <p class="current-page">Início</p>
+        <a href="./cadastro-buddy.html">Cadastrar Buddy</a>
+        <a href="./cadastro-colaborador.html">Cadastrar Colaborador</a>
+        <a href="./gestao-tarefas.html">Gestão de Tarefas</a>
+      </nav>
+    </header>
+
+    <main class="inicio-gestor">
+      <h1 class="title-main">Olá, gestor!</h1>
+      <section id="progresso-main">
+        <div class="section-title">
+          <h1>Progresso dos novos colaboradores</h1>
+        </div>
+        <h2>13 novos colaboradores atualmente</h2>
+        <div>
+          <h3>Em andamento</h3>
+          <div class="progress-bar">
+            <div id="progress-em-andamento" class="current-progress">60%</div>
+          </div>
+        </div>
+        <div>
+          <h3>Metas atrasadas</h3>
+          <div class="progress-bar">
+            <div id="progress-metas-atrasadas" class="current-progress">
+              15%
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Concluído</h3>
+          <div class="progress-bar">
+            <div id="progress-concluido" class="current-progress">25%</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="sections-container">
+        <section class="card-colaboradores">
+          <div class="section-title">
+            <h2>Colaboradores em andamento</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Colaborador</th>
+                <th>Tarefas concluídas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fernando Nakasone</td>
+                <td>1 / 6</td>
+              </tr>
+              <tr>
+                <td>Gilmar Moura</td>
+                <td>6 / 7</td>
+              </tr>
+              <tr>
+                <td>Eduarda Ferreira</td>
+                <td>1 / 4</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="border-btn btn-secondary-main">
+            Ver todos os colaboradores
+          </button>
+        </section>
+
+        <section class="card-colaboradores">
+          <div class="section-title">
+            <h2>Atividade recente</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Colaborador</th>
+                <th>Atividade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fernando Nakasone</td>
+                <td>Concluiu uma tarefa</td>
+              </tr>
+              <tr>
+                <td>Gilmar Moura</td>
+                <td>Alterou o perfil</td>
+              </tr>
+              <tr>
+                <td>Eduarda Ferreira</td>
+                <td>Concluiu uma tarefa</td>
+              </tr>
+            </tbody>
+          </table>
+          <a class="border-btn btn-secondary-main" href="./gestao-tarefas.html"
+            >Ver todas as tarefas</a
+          >
+        </section>
+      </div>
+      <div class="button-row">
+        <a href="./cadastro-colaborador.html" class="btn-primary-main"
+          >Cadastrar colaborador</a
+        >
+        <a href="./gestao-tarefas.html" class="btn-primary-main"
+          >Cadastrar tarefa</a
+        >
+      </div>
+    </main>
+  </body>
+</html>

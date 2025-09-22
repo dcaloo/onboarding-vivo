@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="vivo-logo">
+            <a href="../index.html"><img src="../images/logo-vivo.png" alt="Logo da vivo" /></a>
+            <h1 class="h1-titulo">Onboarding Vivo</h1>
+        </div>
+        <nav>
+            <a href="./inicio.html">Início</a>
+            <p class="current-page">Minhas Tarefas</p>
+            <a href="./minha-rede.html">Minha Rede</a>
+            <a href="./central-duvidas.html">Central de Dúvidas</a>
+            <a href="./central-documentos.html">Central de Documentos</a>
+        </nav>
+                <a href="../colaborador/perfil.html"><img class="foto-perfil" src="../images/caique.png" alt="Foto do usuário atual"></a>
+    </header>
+    
+    <section id="tarefas" class="full">
+            <div class="section-title">
+                <h1>Minhas tarefas</h1>
+            </div>
+            <div class="tarefas-grid">
+                <p class="grid-title">Descrição</p>
+                <p class="grid-title">Contato de suporte</p>
+                <p class="grid-title">Prazo estimado</p>
+                <p class="grid-title">Concluir</p>
+            
+                <p>Traga os seus documentos para completar a papelada de admissão!</p>
+                <p>Fernando Nakasone</p>
+                <p>25 de maio, 2025</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))">
+                        <img src="../images/check-mark.png" alt="Check preto e branco">
+                    </a>
+                </div>
+            
+                <p>Crie um programa teste, para se familiarizar com as ferramentas.</p>
+                <p>Vitor Garcia</p>
+                <p>29 de maio, 2025</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))">
+                        <img src="../images/check-mark.png" alt="Check preto e branco">
+                    </a>
+                </div>
+            
+                <p>Participe de uma reunião online com a gente!</p>
+                <p>Gilmar Moura</p>
+                <p>27 de maio, 2025</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))">
+                        <img src="../images/check-mark.png" alt="Check preto e branco">
+                    </a>
+                </div>
+            
+                <p>Entre no nosso servidor do Discord!</p>
+                <p>Caíque de Lacerda</p>
+                <p>25 de maio, 2025</p>
+                <div>
+                    <a class="apertar-botao" href="" onclick="toggleImage(event, this.querySelector('img'))">
+                        <img src="../images/check.png" alt="Check verde">
+                    </a>
+                </div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div id="progress-metas-colaborador" class="current-progress">25%</div>
+                </div>
+            </div>
+            
+        </section>
+        <script src="../javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding Vivo</title>
+    <link rel="stylesheet" href="../styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="vivo-logo">
+        <a href="../index.html"
+          ><img src="../images/logo-vivo.png" alt="Logo da vivo"
+        /></a>
+        <h1 class="h1-titulo">Onboarding Vivo</h1>
+      </div>
+      <nav>
+        <p class="current-page">Início</p>
+        <a href="../colaborador/minhas-tarefas.html">Minhas Tarefas</a>
+        <a href="../colaborador/minha-rede.html">Minha Rede</a>
+        <a href="../colaborador/central-duvidas.html">Central de Dúvidas</a>
+        <a href="../colaborador/central-documentos.html"
+          >Central de Documentos</a
+        >
+      </nav>
+      <a href="../colaborador/perfil.html"
+        ><img
+          class="foto-perfil"
+          src="../images/caique.png"
+          alt="Foto do usuário atual"
+      /></a>
+    </header>
+    <main class="inicio-colaborador">
+      <h1 class="title-main">Olá, {user}!</h1>
+
+      <section id="metas-main">
+        <div class="section-title">
+          <h1>Minhas metas de 30 dias</h1>
+        </div>
+        <div class="metas-grid">
+          <p class="grid-title">Meta</p>
+          <p class="grid-title">Status</p>
+          <p>Conheça seu gestor</p>
+          <div>
+            <a
+              class="apertar-botao"
+              href=""
+              onclick="toggleImage(event, this.querySelector('img'))"
+              ><img src="../images/check-mark.png" alt="Check preto e branco"
+            /></a>
+          </div>
+          <p>Baixe o Vivo Devkit</p>
+          <div>
+            <a
+              class="apertar-botao"
+              href=""
+              onclick="toggleImage(event, this.querySelector('img'))"
+              ><img src="../images/check-mark.png" alt="Check preto e branco"
+            /></a>
+          </div>
+          <p>Envie um email para um buddy</p>
+          <div>
+            <a
+              class="apertar-botao"
+              href=""
+              onclick="toggleImage(event, this.querySelector('img'))"
+              ><img src="../images/check-mark.png" alt="Check preto e branco"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="tarefas-main">
+        <div class="section-title">
+          <h1>Minhas tarefas</h1>
+          <a class="border-btn" href="./minhas-tarefas.html"
+            >Ver todas as tarefas</a
+          >
+        </div>
+        <div class="tarefas-grid">
+          <p class="grid-title">Descrição</p>
+          <p class="grid-title">Contato de suporte</p>
+          <p class="grid-title">Prazo estimado</p>
+          <p class="grid-title">Concluir</p>
+          <p>Traga os seus documentos para completar a papelada de admissão!</p>
+          <p>Fernando Nakasone</p>
+          <p>25 de maio, 2025</p>
+          <div>
+            <a
+              class="apertar-botao"
+              href=""
+              onclick="toggleImage(event, this.querySelector('img'))"
+              ><img src="../images/check-mark.png" alt="Check preto e branco"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="rede-main">
+        <div class="section-title">
+          <h1>Minha rede</h1>
+          <a class="border-btn" href="./minha-rede.html">Ver minha Rede</a>
+        </div>
+        <div class="rede-imgs">
+          <div class="rede-img">
+            <img src="../images/fernando.png" alt="role buddy" />
+            <p>Fernando Nakasone</p>
+            <p>Role Buddy</p>
+          </div>
+          <div class="rede-img">
+            <img src="../images/vitor.png" alt="gestor" />
+            <p>Vitor Garcia</p>
+            <p>Gestor</p>
+          </div>
+          <div class="rede-img">
+            <img src="../images/caique.png" alt="culture buddy" />
+            <p>Caíque Lacerda</p>
+            <p>Culture Buddy</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
